@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/folder" >
+        
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center"><img class="imagem" src="assets/logo.png"></ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-badge color="warning" >{{cont_car}}</ion-badge>
+    <ion-fab-button  (click)="carrinho()">
+     
+      <ion-icon name="cart" ></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <ion-grid>
+   
+    <ion-row>
+     
+    
+      <ion-col  class="produto2 " *ngFor="let dado of dados2"  (click)="openModal(dado)" size="6" >
+
+      
+
+  
+        <div class="transparente2"><img [src]="dado.images[0].src" width="100%" class="imagens"></div>
+        <p><strong>{{ dado.name}}</strong><br><span [innerHTML]="dado.price_html"></span>
+         </p> 
+
+        
+      </ion-col>
+   
+
+     
+    
+      
+      
+    </ion-row>
+
+  
+  </ion-grid>
+</ion-content>

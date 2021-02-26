@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/folder" >
+        
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Carrinho</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+<ion-col size="12">
+    <ion-item lines="full" > <ion-button slot="end"><ion-icon name="trash-outline"></ion-icon> Remover</ion-button>
+      <ion-thumbnail slot="start" >
+        <img src="https://dev.ideiasdinamicas.com/tt-nova-arquitectura-commerce/wp-content/uploads/2020/07/mesa_Centro_dalia_castanho_claro2.jpg">
+      </ion-thumbnail>
+      <ion-label>Mesa de Centro Dália
+      <ion-text color="primary">
+        <h3>40.000,00 kz X 5</h3>
+      </ion-text>
+      <p>Subtotal: 200.000,00 kz</p>
+   
+    </ion-label>
+    </ion-item>
+  </ion-col>
+
+
+  <ion-col size="12">
+    <ion-item lines="full" >
+      <ion-button slot="end"><ion-icon name="trash-outline"></ion-icon>  Remover</ion-button>
+      <ion-thumbnail slot="start">
+        <img src="https://dev.ideiasdinamicas.com/tt-nova-arquitectura-commerce/wp-content/uploads/2020/07/mesa_Centro_dalia_castanho_claro2.jpg">
+      </ion-thumbnail>
+      <ion-label>Mesa de Centro Dália
+      <ion-text color="primary">
+        <h3>40.000,00 kz X 5</h3>
+      </ion-text>
+      <p>Subtotal: 200.000,00 kz</p>
+   
+    </ion-label>
+    </ion-item>
+  </ion-col>
+
+  <ion-col size="12">
+    <ion-item lines="full" >
+      <ion-button slot="end" color="primary"  shape="round" fill="outline" size="small" (click)="finalizar()"><ion-icon name="card-outline"></ion-icon>  FINALIZAR</ion-button>
+     
+    </ion-item>
+  </ion-col>
+  </ion-row>
+</ion-content>

@@ -1,5 +1,7 @@
 {
   "name": "autentik",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
